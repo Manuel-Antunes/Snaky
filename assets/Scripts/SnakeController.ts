@@ -14,7 +14,7 @@ const { ccclass, property } = cc._decorator;
 @ccclass
 export default class SnakeController extends Controller {
   @property(Snake)
-  public Snake: Snake;
+  public Snake: Snake = null;
   protected onKeyUp(event: cc.Event.EventKeyboard): void {
     switch (event.keyCode) {
       case cc.macro.KEY.up:

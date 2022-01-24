@@ -22,7 +22,7 @@ export default class Snake extends cc.Component {
 
   private bodyNodes: SnakeNode[] = [];
 
-  @property(Number)
+  @property(cc.Float)
   public movePerTime: number = 0.5;
 
   private moveAux: number = 0;
